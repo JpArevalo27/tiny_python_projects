@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 """
 Author: Juan Arevalo <jp-27@outlook.com>
-This is work done following the book Tiny Python Projects
+This is work done following the book Tiny Python Projects   
     by Ken Youens-Clark <kyclark@gmail.com>
 # Purpose: Say hello
 """
