@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\01_hello",
+    "\\02_crowsnest",
     "\\bin"
   ],
-  "SelectedNode": "\\01_hello\\hello2.py",
+  "SelectedNode": "\\02_crowsnest\\crowsnest.py",
   "PreviewInSolutionExplorer": false
 }
