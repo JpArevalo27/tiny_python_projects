@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\01_hello",
-    "\\02_crowsnest",
+    "\\03_picnic",
     "\\bin"
   ],
+<<<<<<< Updated upstream
   "SelectedNode": "\\02_crowsnest\\crowsnest.py",
+=======
+  "SelectedNode": "\\03_picnic\\picnic.py",
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

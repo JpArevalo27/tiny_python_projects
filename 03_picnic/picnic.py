@@ -35,17 +35,26 @@ def main():
     """Make a jazz noise here"""
 
     args = get_args()
-    str_arg = args.arg
-    int_arg = args.int
-    file_arg = args.file
-    flag_arg = args.on
-    pos_arg = args.positional
+    items = args.item
+    start = "You are bringing "
 
-    print(f'str_arg = "{str_arg}"')
-    print(f'int_arg = "{int_arg}"')
-    print('file_arg = "{}"'.format(file_arg.name if file_arg else ''))
-    print(f'flag_arg = "{flag_arg}"')
-    print(f'positional = "{pos_arg}"')
+    if args.sorted:
+        items.sort()
+
+    if len(items) == 1:
+        print(start + items[0] + ".")
+    elif len(items) == 2:
+        print(start + items[0] + " and " + items[1] + ".")
+    else:
+        print(start, end='')
+        for i in range(len(items) - 1):
+            print(items[i] + ", ", end='')
+        print("and " + items[-1] + ".")
+
+
+       
+   
+  
 
 
 # --------------------------------------------------
