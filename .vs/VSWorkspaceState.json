@@ -1,13 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\03_picnic",
-    "\\bin"
+    "\\04_jump_the_five"
   ],
-<<<<<<< Updated upstream
-  "SelectedNode": "\\02_crowsnest\\crowsnest.py",
-=======
-  "SelectedNode": "\\03_picnic\\picnic.py",
->>>>>>> Stashed changes
+  "SelectedNode": "\\04_jump_the_five\\jump.py",
   "PreviewInSolutionExplorer": false
 }
