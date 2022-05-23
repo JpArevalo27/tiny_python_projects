@@ -2,7 +2,7 @@
 """
 Author : juanarevalo <juanarevalo@localhost>
 Date   : 2022-05-16
-Purpose: Rock the Casbah
+Purpose: Encrypt Messages
 """
 
 import argparse
@@ -23,23 +23,35 @@ def get_args():
 
     return parser.parse_args()
 
+# --------------------------------------------------
+def encryptMessage(sMessage):
+    jumper = dict()
+    jumper['1'] = '9'
+    jumper['2'] = '8'
+    jumper['3'] = '7'
+    jumper['4'] = '6'
+    jumper['5'] = '0'
+    jumper['6'] = '4'
+    jumper['7'] = '3'
+    jumper['8'] = '2'
+    jumper['9'] = '1'
+    jumper['0'] = '5'
+
+    output = ""
+    for char in sMessage:
+        output += jumper.get(char, char) # .get(char, return char if not in dict)
+
+    return output
+
 
 # --------------------------------------------------
 def main():
-    """Make a jazz noise here"""
+    """Encrypt a message with this program"""
 
     args = get_args()
-    str_arg = args.arg
-    int_arg = args.int
-    file_arg = args.file
-    flag_arg = args.on
-    pos_arg = args.positional
-
-    print(f'str_arg = "{str_arg}"')
-    print(f'int_arg = "{int_arg}"')
-    print('file_arg = "{}"'.format(file_arg.name if file_arg else ''))
-    print(f'flag_arg = "{flag_arg}"')
-    print(f'positional = "{pos_arg}"')
+ 
+    print(encryptMessage(args.positional))
+    
 
 
 # --------------------------------------------------
