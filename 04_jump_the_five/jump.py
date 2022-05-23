@@ -16,7 +16,7 @@ def get_args():
         description='Jump the Five',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('positional',
+    parser.add_argument('text',
                         metavar='str',
                         help='Input text')
 
@@ -50,7 +50,7 @@ def main():
 
     args = get_args()
  
-    print(encryptMessage(args.positional))
+    print(encryptMessage(args.text))
     
 
 
