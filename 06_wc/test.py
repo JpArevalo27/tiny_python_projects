@@ -104,4 +104,4 @@ def test_stdin():
 
     rv, out = getstatusoutput(f'{prg} < {fox}')
     assert rv == 0
-    assert out.rstrip() == '       1       9      45 <stdin>'
+    assert out.rstrip() == '       1       9      46 <stdin>'
